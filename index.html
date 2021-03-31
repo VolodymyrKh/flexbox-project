@@ -18,8 +18,40 @@
 <body>
     <!-- header -->
     <header class="header">
+        <!-- menu section -->
         <nav class="menu">
+            <div class="menu__inner">
+                <div class="menu__top">
+                    <a href="#" class="logo">
+                        <img src="./images/logo.svg" alt="logo img">
+                    </a>
+                    <button class="menu__btn" type="button">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#about" class="menu__link">about</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#features" class="menu__link">skills</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#progress" class="menu__link">progress</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#projects" class="menu__link">projects</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#contact" class="menu__link">contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+        <!-- banner section -->
         <div class="banner">
             <h2 class="banner__heading">
                 developer
@@ -44,7 +76,7 @@
 
     <main class="main">
         <!-- about section -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="about__inner">
                 <article class="about-img">
                     <img class="about-img__photo" src="./images/aboutImg .jpg" alt="about image">
@@ -78,7 +110,7 @@
         </section>
 
         <!-- features section -->
-        <section class="features">
+        <section class="features" id="features">
             <h2 class="title features-title">features and skills</h2>
             <div class="features__inner">
                 <!-- features item -->
@@ -139,7 +171,7 @@
         </section>
 
         <!-- progress section  -->
-        <section class="progress">
+        <section class="progress" id="progress">
             <h2 class="title progress__title">progress</h2>
             <div class="progress__inner">
                 <!-- prorress item -->
@@ -192,8 +224,9 @@
                 </article>
             </div>
         </section>
+
         <!-- projects section -->
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2 class="title projects__title">projects</h2>
             <div class="projects__inner">
                 <!-- projects item -->
@@ -256,17 +289,18 @@
         </section>
 
         <!-- contact section -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2 class="title contact__title">contact form</h2>
             <div class="contact__inner">
                 <!-- feedback form -->
                 <form class="contact__form">
                     <div class="contact__inputs">
-                        <input class="contact__input" type="text" placeholder="your name">
-                        <input class="contact__inputs" type="email" placeholder="email" required>
+                        <input class="contact__input" type="text" placeholder="name">
+                        <input class="contact__input" type="email" placeholder="email" required>
                     </div>
                     <textarea class="contact__message" placeholder="your message please"></textarea>
-                    <button class="contact_btn" type="submit">
+
+                    <button class="contact__btn" type="submit">
                         send message
                         <span class="contact__icon">
                             <i class="fas fa-envelope"></i>
@@ -274,8 +308,37 @@
                     </button>
                 </form>
             </div>
-        </section> 
+        </section>
     </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <!-- social  media -->
+            <ul class="footer__social-list">
+                <li class="footer__soicial-item">
+                    <a href="#" class="footer__social-link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="footer__soicial-item">
+                    <a href="#" class="footer__social-link" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="footer__soicial-item">
+                    <a href="#" class="footer__social-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="footer__soicial-item">
+                    <a href="#" class="footer__social-link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer> 
 
 
     <!--font-awesome -->
